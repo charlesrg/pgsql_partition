@@ -5,8 +5,10 @@ Sample postgresql partition C trigger.
 
  * Partition trigger test
  * This trigger is just a test, during inserts it will skip your child table triggers
-  * The trigger should be used this way:
- 
+
+For more info check: http://www.charlesrg.com/linux/71-postgresql-partitioning-the-database-the-fastest-way
+
+The trigger should be used this way:
 
  CREATE OR REPLACE FUNCTION quotes_insert_trigger() RETURNS trigger
       AS 'pgsql_partition3'
